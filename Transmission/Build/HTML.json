@@ -1,0 +1,15 @@
+{
+"companyName": "DefaultCompany",
+"productName": "GGJAM_Tr4n5.Mission",
+"productVersion": "1.0",
+"dataUrl": "HTML.data.unityweb",
+"wasmCodeUrl": "HTML.wasm.code.unityweb",
+"wasmFrameworkUrl": "HTML.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"developmentBuild": true,
+"multithreading": false,
+"unityVersion": "2019.4.16f1"
+}

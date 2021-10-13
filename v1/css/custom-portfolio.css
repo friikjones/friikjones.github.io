@@ -1,0 +1,94 @@
+portfolio {}
+
+port-title {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+portfolio-items {
+    display: grid;
+    grid-column-gap: 4rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+port-subtitle {
+    display: grid;
+    grid-area: port-subtitle;
+    font-size: 2rem;
+    text-align: center;
+    justify-content: center;
+}
+
+port-box1,
+port-box2,
+port-box3,
+port-box4 {
+    font-size: 2rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    background: #1d3650;
+}
+
+port-box1 {
+    grid-area: port-box1;
+}
+
+port-box2 {
+    grid-area: port-box2;
+}
+
+port-box3 {
+    grid-area: port-box3;
+}
+
+port-box4 {
+    grid-area: port-box4;
+}
+
+/*For different screen sizes*/
+@media only screen and (max-width: 848px) {
+
+    /*Fix tile font size on mobile*/
+    portfolio-items {
+        padding-left: 5rem;
+        padding-right: 5rem;
+        justify-items: left;
+        grid-template-areas:
+            "port-subtitle";
+    }
+
+    port-title {
+        justify-self: center;
+    }
+}
+
+@media only screen and (min-width: 849px) {
+
+    portfolio-items {
+        padding-left: 15rem;
+        padding-right: 15rem;
+        align-items: stretch;
+        justify-items: stretch;
+        height: 10rem;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-areas:
+            "port-subtitle  port-box1   port-box2   port-box3 port-box4";
+        grid-column-gap: 4rem;
+    }
+
+    port-title {
+        justify-self: center;
+    }
+}
+
+
+.img-fit {
+    max-width: 95%;
+    max-height: 95%;
+    margin-top: 5%;
+    margin-left: 2.5%;
+}

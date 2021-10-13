@@ -1,0 +1,16 @@
+/* --------- Common --------- */
+text {
+    max-width: 900px;
+    grid-area: text;
+    margin-top: 1rem;
+    font-size: 1.25rem;
+}
+
+
+/* TODO move this to its own file */
+whoami {
+    color: white;
+    text-align: center;
+    padding-top: 10rem;
+    padding-bottom: 2rem;
+}

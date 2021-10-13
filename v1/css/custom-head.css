@@ -1,0 +1,13 @@
+/* --------- Head --------- */
+heading {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 5.75rem;
+    line-height: 2.75rem;
+    text-transform: uppercase !important;
+}
+
+subheading {
+    margin-top: 1rem;
+    font-size: 4.75rem;
+}

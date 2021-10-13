@@ -1,0 +1,102 @@
+/* --------- Resume --------- */
+resume {
+    display: grid;
+    grid-column-gap: 4rem;
+}
+
+resume-title {
+    grid-area: resume-title;
+    text-decoration: underline;
+    font-size: 2rem;
+    text-align: center;
+}
+
+resume-down {
+    grid-area: resume-down;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+resume-down-link {
+    display: inline-block;
+    background: black;
+    color: white;
+    padding: 0.3rem;
+    font-size: .75rem;
+}
+
+resume-exp {
+    grid-area: resume-exp;
+}
+
+resume-h1 {
+    font-size: 2.5rem;
+}
+
+resume-h2 {
+    font-size: 1.5rem;
+}
+
+resume-ul {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+resume-li {
+    font-size: .75rem;
+}
+
+resume-skil {
+    grid-area: resume-skil;
+}
+
+resume-lang {
+    grid-area: resume-lang;
+}
+
+resume-educ {
+    grid-area: resume-educ;
+}
+
+/*For different screen sizes*/
+@media only screen and (max-width: 848px) {
+
+    /*Fix tile font size on mobile*/
+    resume {
+        padding-left: 5rem;
+        padding-right: 5rem;
+        justify-items: left;
+        grid-template-areas:
+            "resume-title"
+            "resume-down"
+            "resume-exp"
+            "resume-soft"
+            "resume-skil"
+            "resume-educ"
+            "resume-lang";
+    }
+
+    resume-title {
+        justify-self: center;
+    }
+
+    resume-down {
+        justify-self: center;
+    }
+}
+
+@media only screen and (min-width: 849px) {
+
+    resume {
+        padding-left: 15rem;
+        padding-right: 15rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "resume-title resume-title"
+            "resume-down resume-down"
+            "resume-exp resume-skil"
+            "resume-exp resume-educ"
+            "resume-exp resume-lang";
+        grid-column-gap: 4rem;
+    }
+}
