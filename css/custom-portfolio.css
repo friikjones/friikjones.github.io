@@ -31,6 +31,7 @@ port-box4 {
     margin-top: .5rem;
     margin-bottom: .5rem;
     background: #1d3650;
+    color: whitesmoke;
 }
 
 port-box1 {
@@ -50,7 +51,7 @@ port-box4 {
 }
 
 /*For different screen sizes*/
-@media only screen and (max-width: 848px) {
+@media only screen and (max-width: 1200px) {
 
     /*Fix tile font size on mobile*/
     portfolio-items {
@@ -58,7 +59,11 @@ port-box4 {
         padding-right: 5rem;
         justify-items: left;
         grid-template-areas:
-            "port-subtitle";
+            "port-subtitle"
+            "port-box1"
+            "port-box2"
+            "port-box3"
+            "port-box4";
     }
 
     port-title {
@@ -66,17 +71,15 @@ port-box4 {
     }
 }
 
-@media only screen and (min-width: 849px) {
+@media only screen and (min-width: 1200px) {
 
     portfolio-items {
-        padding-left: 15rem;
-        padding-right: 15rem;
         align-items: stretch;
         justify-items: stretch;
         height: 10rem;
         grid-template-columns: repeat(5, 1fr);
         grid-template-areas:
-            "port-subtitle  port-box1   port-box2   port-box3 port-box4";
+            "port-subtitle port-box1 port-box2 port-box3 port-box4";
         grid-column-gap: 4rem;
     }
 

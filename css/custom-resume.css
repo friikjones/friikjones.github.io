@@ -59,7 +59,7 @@ resume-educ {
 }
 
 /*For different screen sizes*/
-@media only screen and (max-width: 848px) {
+@media only screen and (max-width: 1200px) {
 
     /*Fix tile font size on mobile*/
     resume {
@@ -85,7 +85,7 @@ resume-educ {
     }
 }
 
-@media only screen and (min-width: 849px) {
+@media only screen and (min-width: 1200px) {
 
     resume {
         padding-left: 15rem;
