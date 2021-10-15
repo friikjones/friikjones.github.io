@@ -21,7 +21,7 @@
 	https://globalgamejam.org/2020/games/fix-it-9-0
 
 ## 6 RPG
-	https://gitlab.com/friikjones/RPG/-/tree/master/4%20-%20Campaigns
+	https://gitlab.com/friikjones/RPG
 
 ### 7 1Jam
 	https://friikjones.itch.io/

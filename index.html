@@ -235,9 +235,12 @@
             <portfolio-items>
                 <port-subtitle> As QA </port-subtitle>
                 <port-box1>
-                    <a class="portfolio-box" href="https://www.ea.com/games/fifa/fifa-21">
+                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
                         <img class="img-fit" src="assets/img/portfolio/fifa21 1920x1080.jpg">
-                    </a>
+                    </div>
                 </port-box1>
                 <port-box2>
                     <a class="portfolio-box" href="https://www.gears5.com/">
@@ -271,14 +274,13 @@
             <portfolio-items>
                 <port-subtitle> As Storyteller </port-subtitle>
                 <port-box1>
-                    <a class="portfolio-box" href="https://gitlab.com/friikjones/RPG">
+                    <a class="portfolio-box" href="https://github.com/friikjones/RPGs">
                         <img class="img-fit" src="assets/img/portfolio/RPG git 1920x1080.png">
                     </a> </port-box1>
                 <port-box2>
                     <a class="portfolio-box" href="https://homebrewery.naturalcrit.com/user/d.mullerjones@gmail.com">
                         <img class="img-fit" src="assets/img/portfolio/DnD homebrew 1920x1080.png">
                     </a> </port-box2>
-                <port-box3> Paranoia </port-box3>
             </portfolio-items>
             <portfolio-items>
                 <port-subtitle> Other Projects </port-subtitle>
@@ -333,6 +335,55 @@
     <div class="scroll-to-top d-lg-none position-fixed">
         <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a>
     </div>
+    <!-- Portfolio Modal 1 - Photonic-->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                </button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal1Label">Photonic</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <a href="https://www.youtube.com/watch?v=-pcRmbnG4K8">
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Photonic Collage 900x650.png" alt="" />
+                                </a>
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-5">Photonic is a game about a light particle trying to get to the core of a particle accelerator.<br>
+                                    Made for the Global Game Jam 2017 with a team of game development enthusiasts in Brazil. <br>
+                                    It was the first game that we ever did. My main role was level designer and 3D artist.<br>
+                                    The game was made using Unreal Engine and Autodesk Maya. <br>
+                                    Available for Windows<br><br>
+                                    Find it on:
+                                    <a href="https://github.com/Southern-Island/Photonic">Github</a> or
+                                    <a href="https://globalgamejam.org/2017/games/photonic">GGJ website</a>
+                                </p>
+                                <button class="btn btn-primary" data-dismiss="modal">
+                                    <i class="fas fa-times fa-fw"></i>
+                                    Back
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>

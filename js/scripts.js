@@ -50,7 +50,7 @@
     type: 'image',
     tLoading: 'Loading image #%curr%...',
     mainClass: 'mfp-img-mobile',
-    gallery: {
+    gallery: {a
       enabled: true,
       navigateByImgClick: true,
       preload: [0, 1]
