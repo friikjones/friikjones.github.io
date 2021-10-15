@@ -4,14 +4,14 @@ port-title {
     display: block;
     margin-top: 1rem;
     margin-bottom: 3rem;
-    font-size: 2rem;
+    font-size: 4rem;
     text-align: center;
 }
 
 portfolio-items {
     display: grid;
-    grid-column-gap: 4rem;
-    margin-top: .5rem;
+    grid-column-gap: 2rem;
+    margin-top: 2rem;
     margin-bottom: .5rem;
 }
 
@@ -66,7 +66,7 @@ port-box4 {
             "port-box4";
     }
 
-    port-title {
+    port-subtitle {
         justify-self: center;
     }
 }
@@ -74,17 +74,21 @@ port-box4 {
 @media only screen and (min-width: 1200px) {
 
     portfolio-items {
+        margin-left: 2rem;
+        margin-right: 2rem;
         align-items: stretch;
         justify-items: stretch;
-        height: 10rem;
+        height: 15rem;
         grid-template-columns: repeat(5, 1fr);
         grid-template-areas:
             "port-subtitle port-box1 port-box2 port-box3 port-box4";
-        grid-column-gap: 4rem;
+        grid-column-gap: 2rem;
     }
 
-    port-title {
-        justify-self: center;
+    port-subtitle {
+        justify-self: safe right;
+        align-self: center;
+        font-size: 3rem;
     }
 }
 
