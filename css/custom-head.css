@@ -11,3 +11,11 @@ subheading {
     margin-top: 1rem;
     font-size: 4.75rem;
 }
+
+whoami {
+    color: white;
+    text-align: center;
+    padding-top: 10rem;
+    padding-bottom: 2rem;
+    font-family: 'Roboto', sans-serif;
+}

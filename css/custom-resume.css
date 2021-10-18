@@ -4,6 +4,11 @@ resume {
     grid-column-gap: 4rem;
 }
 
+.resume-colors {
+    background-color: #f3f3f3 !important;
+    font-family: 'Roboto', sans-serif;
+}
+
 resume-title {
     grid-area: resume-title;
     text-decoration: underline;
