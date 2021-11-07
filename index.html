@@ -11,9 +11,10 @@
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+    <!-- Roboto Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <!-- Third party plugin CSS-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
@@ -37,16 +38,17 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto my-2 my-lg-0">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#top">Back to Top</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#resume">Resume</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#personal">Who am I</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li> -->
                 </ul>
             </div>
         </div>
     </nav>
     <!-- Masthead-->
-    <header class="masthead">
+    <header class="masthead" id="top">
         <whoami>
             <heading>
                 <p style="font-size:50%;margin-bottom:0rem;text-transform: none;"> Hi! I'm </p>
@@ -61,33 +63,99 @@
         </whoami>
     </header>
     <!-- Resume-->
-    <section class=" page-section bg-primary" id="resume">
+    <section class="page-section resume-colors" id="resume">
         <resume>
             <resume-title>
                 <resume-h1> Resume </resume-h1>
             </resume-title>
             <resume-down>
                 <resume-down-link>
-                    <a href="assets/CV_Daniel_Jones.pdf" download>
-                        Download
+                    <a href="assets/CV_Daniel_Jones.pdf" download style="color:whitesmoke;">
+                        PDF download
                     </a>
                 </resume-down-link>
             </resume-down>
             <resume-exp>
-                <resume-h2> Experiences:</resume-h2>
+                <resume-h2> Highlights of Qualifications</resume-h2>
+                <ul>
+                    <resume-li>
+                        <li>
+                            Jira/ Performance/ Confluence/ Perforce
+                        </li>
+                        <li>
+                            Comfortable organizing and leading mid-size teams
+                        </li>
+                        <li>
+                            Friendly/knowledgeable and team oriented
+                        </li>
+                        <li>
+                            Familiar with Post launch life content cycles
+                        </li>
+                        <li>
+                            Solid understanding of build pipelines
+                        </li>
+                        <li>
+                            Native Portuguese speaker
+                        </li>
+                    </resume-li>
+                </ul>
+                <resume-h2> Professional Experiences:</resume-h2>
                 <ul>
                     <resume-ul>
-                        Development Support (Contractor) for EA (since Jul. 2020)
+                        Development Support (Contractor) for The Coalition (since Feb. 2021)
                     </resume-ul>
                     <resume-li>
                         <li>
-                            Focused on bug finding and complete life-cycle, from bug reporting to tracking, regressing and closing.
+                            Performed performance captures on all new features and maps
                         </li>
                         <li>
-                            Working with development kits and management tools, build deployment and workspace setups.
+                            Work closely with Performance Test Coordinator on daily basis
                         </li>
                         <li>
-                            Familiar with build pipelines, hierarchy structure and development support best-practices.
+                            Organized and managed teams up to 11 members
+                        </li>
+                        <li>
+                            Aided/problem solved teams equipment setup issues
+                        </li>
+                        <li>
+                            Assisted Release QA team with additional testing logging & regressed issues as needed
+                        </li>
+                        <li>
+                            Responsible for updating and maintain Confluence documentation
+                        </li>
+                        <li>
+                            Using critical thinking and detailed oriented perspectives to find and report both large- and small-scale bugs
+                        </li>
+                        <li>
+                            Recipient of QA Embry Star Award for “Going Above and Beyond”
+                        </li>
+                    </resume-li>
+                </ul>
+                <ul>
+                    <resume-ul>
+                        Development Support (Contractor) for EA (Jul. 2020 to Jan. 2021)
+                    </resume-ul>
+                    <resume-li>
+                        <li>
+                            Executing server performance run for multiplayer sessions stability
+                        </li>
+                        <li>
+                            POC for regressions and detail-oriented bug hunts
+                        </li>
+                        <li>
+                            Worked with development kits for gen4 and gen5 consoles for multiple platforms (PlayStation, Xbox, Google Stadia)
+                        </li>
+                        <li>
+                            Using JIRA and other internal tools for reporting, tracking and regressing bugs
+                        </li>
+                        <li>
+                            Worked closely with test leads and embedded QA on highly specialized tasks and bug regressions
+                        </li>
+                        <li>
+                            Helped create a friendly work culture that resulted in a clear increase of productivity and general sense of happiness
+                        </li>
+                        <li>
+                            Worked in several areas within FIFA21 (Pro Clubs, Campaign, Volta, FUT)
                         </li>
                     </resume-li>
                 </ul>
@@ -97,71 +165,19 @@
                     </resume-ul>
                     <resume-li>
                         <li>
-                            Working on maintaining and upgrading code for web application on both client and server.
+                            Working on maintaining and adding features to backend codebase in Python
                         </li>
                         <li>
-                            Handling different interfacing programming languages at once (Python, JS, bash scripting, AngularJS, MithrilJS)
+                            Working on refactoring frontend codebase from AngularJS into Mithril.js
                         </li>
                         <li>
-                            Developing new features as well as helping in the overhaul of the entire system architecture.
-                        </li>
-                    </resume-li>
-                </ul>
-                <ul>
-                    <resume-ul>
-                        Developer (Student) at Cornerstone International Community College (since Sep. 2019)
-                    </resume-ul>
-                    <resume-li>
-                        <li>
-                            Leading role in several group projects, from websites and scripts to Java and Kotlin applications
+                            Working on planning and implementing refactoring of business logic within the architecture of the application
                         </li>
                         <li>
-                            Working knowledge of Structured and Object Oriented Programming
+                            Part of a remote team across multiple time-zones, learning how to operate within those constrains
                         </li>
                         <li>
-                            Currently focusing in learning several programming patterns and structures for Game Development.
-                        </li>
-                    </resume-li>
-                </ul>
-                <ul>
-                    <resume-ul>
-                        Game Developer (Hobbyist) (since 2015)
-                    </resume-ul>
-                    <resume-li>
-                        <li>
-                            Self taught game designing and developing
-                        </li>
-                        <li>
-                            Several small projects, especially collaborative and game jam projects.
-                        </li>
-                    </resume-li>
-                </ul>
-                <ul>
-                    <resume-ul>
-                        Systems Technician II at Johnson Controls, Inc. (Oct. 2018 to Jul. 2019)
-                    </resume-ul>
-                    <resume-li>
-                        <li>
-                            Designed and developed custom BMS solutions for clients, while supervising and managing installation teams.
-                        </li>
-                        <li>
-                            Responsible for implementing a BMS system that integrates 8 subsystems, 2 buildings and more than 500 field nodes, while also interfacing the first magnetic bearing chiller of São Paulo state.
-                        </li>
-                    </resume-li>
-                </ul>
-                <ul>
-                    <resume-ul>
-                        Technical Designer at Sistavac Brazil (Mar. 2017 to Jul. 2018)
-                    </resume-ul>
-                    <resume-li>
-                        <li>
-                            Designed and developed systems, both physical infrastructure and software, graphical interfaces and operational manuals for different BMS solutions.
-                        </li>
-                        <li>
-                            Designed several automation systems for a BSL-3 laboratory in one of the most prestiged health insitutions of Brazil.
-                        </li>
-                        <li>
-                            Responsible for interfacing with clients in several work sites, having developed lasting professional relationships that go beyond the project itself.
+                            Direct interface with clients and major stakeholders
                         </li>
                     </resume-li>
                 </ul>
@@ -191,6 +207,9 @@
                             Studying algorithm development as well as their implementation, exploring complexity, identification of strong-suits and flaws, etc.
                         </li>
                         <li>
+                            Understanding of programming logic from machine code instructions all the way to higher level languages.
+                        </li>
+                        <li>
                             Development for Web (front-end and back-end) as well as mobile, both Android and iOS, working in Kotlin, ObjectiveC and Swift.
                         </li>
                     </resume-li>
@@ -204,9 +223,6 @@
                             Strong Algebra and Calculus foundation, paired with technical knowledge on mathematical modeling of mechanical and electronic systems, development of control equations and automation implementation.
                         </li>
                         <li>
-                            Understanding of programming logic from machine code instructions all the way to higher level languages.
-                        </li>
-                        <li>
                             Strong logical reasoning; ability to break complex problems into their fundamental components, resolving them from either bottom-up and top-down perspectives.
                         </li>
                         <li>
@@ -215,81 +231,118 @@
                     </resume-li>
                 </ul>
             </resume-educ>
-            <resume-lang>
-                <resume-h2> Languages: </resume-h2>
-                <resume-ul>
-                    <ul>
-                        Portuguese
-                        <br> English
-                        <br> Spanish
-                    </ul>
-                </resume-ul>
-            </resume-lang>
+            <!-- <resume-lang> -->
+            <!-- <resume-h2> Languages: </resume-h2> -->
+            <!-- <resume-ul> -->
+            <!-- <ul> -->
+            <!-- Portuguese / English -->
+            <!-- </ul> -->
+            <!-- </resume-ul> -->
+            <!-- </resume-lang> -->
         </resume>
-    </section> <!-- Portfolio-->
-    <!-- TODO : add BG to section -->
-    <!-- TODO : add vertical spaces between rows -->
-    <section class="page-section" id="portfolio">
+    </section>
+    <!-- Portfolio-->
+    <!-- TODO center hover responsive -->
+    <!-- TODO Center items -->
+    <section class="page-section portfolio-colors" id="portfolio">
         <portfolio>
             <port-title>Portfolio</port-title>
             <portfolio-items>
                 <port-subtitle> As QA </port-subtitle>
                 <port-box1>
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
-                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-plus-sign"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-fit" src="assets/img/portfolio/fifa21 1920x1080.jpg">
+                        <img class="img-fit" src="assets/img/portfolio/fifa21 1920x1080.png" alt="..." />
                     </div>
                 </port-box1>
                 <port-box2>
-                    <a class="portfolio-box" href="https://www.gears5.com/">
-                        <img class="img-fit" src="assets/img/portfolio/gears5 1920x1080.jpg">
-                    </a>
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-plus-sign"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fit" src="assets/img/portfolio/gears5 1920x1080.png" alt="..." />
+                    </div>
                 </port-box2>
             </portfolio-items>
             <portfolio-items>
                 <port-subtitle> As Designer </port-subtitle>
                 <port-box1>
-                    <a class="portfolio-box" href="https://github.com/Southern-Island/Photonic">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-plus-sign"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
                         <img class="img-fit" src="assets/img/portfolio/Photonic 1920x1080.png">
-                    </a>
+                    </div>
                 </port-box1>
                 <port-box2>
-                    <a class="portfolio-box" href="https://github.com/friikjones/Mission-Transmission">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-plus-sign"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
                         <img class="img-fit" src="assets/img/portfolio/Mission Transmission 1920x1080.png">
-                    </a>
+                    </div>
                 </port-box2>
                 <port-box3>
-                    <a class="portfolio-box" href="https://play.google.com/store/apps/details?id=io.FriikStudio.DodgeTheCircle">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-plus-sign"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
                         <img class="img-fit" src="assets/img/portfolio/Dodge the Circle 1920x1080.png">
-                    </a>
+                    </div>
                 </port-box3>
                 <port-box4>
-                    <a class="portfolio-box" href="https://gitlab.com/friikjones/solo-games/-/tree/master/2%20-%20Knights%20Duty">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-plus-sign"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
                         <img class="img-fit" src="assets/img/portfolio/knights duty 1920x1080.png">
-                    </a>
+                    </div>
                 </port-box4>
             </portfolio-items>
             <portfolio-items>
                 <port-subtitle> As Storyteller </port-subtitle>
                 <port-box1>
-                    <a class="portfolio-box" href="https://github.com/friikjones/RPGs">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal7">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-plus-sign"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
                         <img class="img-fit" src="assets/img/portfolio/RPG git 1920x1080.png">
-                    </a> </port-box1>
+                    </div>
+                </port-box1>
                 <port-box2>
-                    <a class="portfolio-box" href="https://homebrewery.naturalcrit.com/user/d.mullerjones@gmail.com">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal8">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-plus-sign"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
                         <img class="img-fit" src="assets/img/portfolio/DnD homebrew 1920x1080.png">
-                    </a> </port-box2>
+                    </div>
+                </port-box2>
             </portfolio-items>
             <portfolio-items>
                 <port-subtitle> Other Projects </port-subtitle>
-                <port-box1> GGJ </port-box1>
-                <port-box2> #1Jam </port-box2>
+                <port-box1>
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal9">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-plus-sign"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fit" src="assets/img/portfolio/GGJ 1000x900.png" style="width: 80%;">
+                    </div>
+                </port-box1>
+                <port-box2>
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal10">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-plus-sign"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fit" src="assets/img/portfolio/1Jam 640x640.png" style="width: 70%;">
+                    </div>
+                </port-box2>
             </portfolio-items>
         </portfolio>
     </section>
     <!-- Personal-->
+    <!-- TODO rewrite this bit -->
     <section class=" page-section bg-primary" id="personal">
         <personal>
             <personal-title>
@@ -305,71 +358,58 @@
         </personal>
     </section>
     <!-- Contact-->
-    <section class=" page-section bg-primary" id="contact" style="padding:0px">
-        <contact>
-            <contact-title>Reach me at</contact-title>
-            <contact-icon>
-                <a class="btn btn-outline-light btn-social mx-1" href="mailto:daniel@friikstudios.com">
-                    <i class="fab fa fa-envelope"></i>
-                </a>
-                <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/daniel-jones-514a1b51/">
-                    <i class="fab fa-fw fa-linkedin-in"></i>
-                </a>
-                <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/friikjones">
-                    <i class="fab fa-fw fa-github"></i>
-                </a>
-                <a class="btn btn-outline-light btn-social mx-1" href="https://gitlab.com/friikjones">
-                    <i class="fab fa-fw fa-gitlab"></i>
-                </a>
-            </contact-icon>
-        </contact>
-    </section>
+    <contact>
+        <contact-title>Find me at</contact-title>
+        <contact-icon>
+            <a class="btn btn-outline-light btn-social mx-1" href="mailto:d.mullerjones@gmail.com">
+                <i class="fab fa fa-mail-bulk"></i>
+            </a>
+            <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/daniel-jones-514a1b51/">
+                <i class="fab fa-fw fa-linkedin-in"></i>
+            </a>
+            <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/friikjones">
+                <i class="fab fa-fw fa-github"></i>
+            </a>
+            <a class="btn btn-outline-light btn-social mx-1" href="https://friikjones.itch.io/">
+                <i class="fab fa-fw fa-itch-io"></i>
+            </a>
+            <a class="btn btn-outline-light btn-social mx-1" href="https://play.google.com/store/apps/developer?id=FriiKStudios">
+                <i class="fab fa-fw fa-google-play"></i>
+            </a>
+        </contact-icon>
+    </contact>
+    <!-- </section> -->
     <!-- Copyright Section-->
     <div class="copyright py-4 text-center text-white" style="background: black;">
-        <div class="container">
+        <div class="container" style="font-family: 'Roboto', sans-serif;">
             <small>Copyright © Daniel Jones 2021<br>
-                Made with Freelancer, MIT licensed Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a></small>
+                Made with Freelancer, MIT licensed Bootstrap theme created by <a href="https://startbootstrap.com">Start Bootstrap</a></small>
         </div>
     </div>
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
-    <div class="scroll-to-top d-lg-none position-fixed">
-        <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a>
-    </div>
-    <!-- Portfolio Modal 1 - Photonic-->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
-        <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content">
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                </button>
-                <div class="modal-body text-center">
+    <!-- Portfolio Modals-->
+    <!-- Portfolio Modal 1-->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content modal-colors">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal1Label">Photonic</h2>
+                                <modal-title>FIFA 21 at Electronic Arts Vancouver</modal-title>
                                 <!-- Icon Divider-->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                </div>
+                                <modal-divider />
                                 <!-- Portfolio Modal - Image-->
-                                <a href="https://www.youtube.com/watch?v=-pcRmbnG4K8">
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Photonic Collage 900x650.png" alt="" />
-                                </a>
+                                <img class="img-fit rounded mb-5" src="assets/img/portfolio/fifa21 1920x1080.png" alt="..." />
                                 <!-- Portfolio Modal - Text-->
-                                <p class="mb-5">Photonic is a game about a light particle trying to get to the core of a particle accelerator.<br>
-                                    Made for the Global Game Jam 2017 with a team of game development enthusiasts in Brazil. <br>
-                                    It was the first game that we ever did. My main role was level designer and 3D artist.<br>
-                                    The game was made using Unreal Engine and Autodesk Maya. <br>
-                                    Available for Windows<br><br>
-                                    Find it on:
-                                    <a href="https://github.com/Southern-Island/Photonic">Github</a> or
-                                    <a href="https://globalgamejam.org/2017/games/photonic">GGJ website</a>
-                                </p>
-                                <button class="btn btn-primary" data-dismiss="modal">
-                                    <i class="fas fa-times fa-fw"></i>
-                                    Back
-                                </button>
+                                <modal-description> Worked as QA, focusing in server performance run for multiplayer sessions stability <br>
+                                    Helped ship both Gen4 and Gen5 consoles for multiple platforms<br>
+                                    (PlayStation, Xbox, Google Stadia) <br>
+                                    Had the opportunity to work in several areas within FIFA21<br>
+                                    (Pro Clubs, Campaign, Volta, FUT) <br>
+                                    Find the game at: <a href="https://www.ea.com/games/fifa/fifa-21"> Fifa 21</a>
+                                </modal-description>
                             </div>
                         </div>
                     </div>
@@ -377,11 +417,306 @@
             </div>
         </div>
     </div>
+    <!-- Portfolio Modal 2-->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content modal-colors">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <modal-title>Gears of War 5 at The Coalition</modal-title>
+                                <!-- Icon Divider-->
+                                <modal-divider />
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fit rounded mb-5" src="assets/img/portfolio/gears5 1920x1080.png" alt="..." />
+                                <!-- Portfolio Modal - Text-->
+                                <modal-description> Worked as QA, focusing in performance captures on all new features and maps<br>
+                                    Helped ship several operations, maps and customization content<br>
+                                    Awarded an Embry Star Award for “going above and beyond” <br>
+                                    Find the game at: <a href="https://www.gears5.com/"> Gears 5</a>
+                                </modal-description>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 3-->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content modal-colors">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <modal-title>Photonic</modal-title>
+                                <!-- Icon Divider-->
+                                <modal-divider />
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fit rounded mb-5" src="assets/img/portfolio/Photonic Collage 900x650.png" alt="..." />
+                                <!-- Portfolio Modal - Text-->
+                                <modal-description>
+                                    Photonic is a game about a light particle trying to get to the core of a particle accelerator.<br>
+                                    Made for the Global Game Jam 2017 with a team of game development enthusiasts in Brazil. <br>
+                                    It was the first game that we ever did. My main role was level designer and 3D artist.<br>
+                                    The game was made using Unreal Engine and Autodesk Maya. <br>
+                                    Available for Windows.<br><br>
+                                    Find it on:
+                                    <a href="https://github.com/Southern-Island/Photonic">Github</a> or
+                                    <a href="https://globalgamejam.org/2017/games/photonic">GGJ website</a>
+                                </modal-description>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 4-->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content modal-colors">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <modal-title>Mission: Transmission</modal-title>
+                                <!-- Icon Divider-->
+                                <modal-divider />
+                                <!-- Portfolio Modal - Image-->
+                                <div>
+                                    <img class="img-fit rounded mb-5" src="assets/img/portfolio/Mission Transmission 900x650.png" alt="..." style="width: 45%;" />
+                                    <img class="img-fit rounded mb-5" src="assets/img/portfolio/Mission Transmission Collage 900x650.png" alt="..." style="width: 45%;" />
+                                </div>
+                                <!-- Portfolio Modal - Text-->
+                                <modal-description>
+                                    A game about logic and 80's synth. Be smart, avoid the NSA and get your DataDrone through. We're counting on you. Hack the Planet!.<br>
+                                    Made for the Global Game Jam 2018 with a team of game development enthusiasts in Brazil. <br>
+                                    My second jam game, working with a big team. My main role was lead designer, 3D artist and level designer.<br>
+                                    The game was made using Unity Engine, with 3D assets created on Autodesk Maya.<br>
+                                    Available for Windows.<br>
+                                    Find it on:
+                                    <a href="https://github.com/friikjones/Mission-Transmission">Github</a> and
+                                    <a href="https://globalgamejam.org/2018/games/mission-transmission">GGJ website</a>
+                                </modal-description>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 5-->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content modal-colors">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <modal-title>Dodge the Circle</modal-title>
+                                <!-- Icon Divider-->
+                                <modal-divider />
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fit rounded mb-5" src="assets/img/portfolio/Dodge the Circle Collage 900x650.png" alt="..." />
+                                <!-- Portfolio Modal - Text-->
+                                <modal-description>
+                                    A rhythm game for Android. <br>
+                                    Started as final project for the Android Development course at CICCC, expanded into a complete game.<br>
+                                    Dodge the outgoing walls, survive as long as you can, and go for the highscore!<br>
+                                    This was the first project of FriikStudios!<br>
+                                    The game was made using Unity Engine.<br><br>
+                                    Find the game at: <a href="https://play.google.com/store/apps/details?id=io.FriikStudio.DodgeTheCircle">Google Play</a> <br>
+                                    Find the code at: <a href="https://github.com/friikjones/dodge-the-circle">Github</a>
+                                </modal-description>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 6-->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content modal-colors">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <modal-title>Knight's Duty</modal-title>
+                                <!-- Icon Divider-->
+                                <modal-divider />
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fit rounded mb-5" src="assets/img/portfolio/knights duty 1920x1080.png" alt="..." />
+                                <!-- Portfolio Modal - Text-->
+                                <modal-description>
+                                    An analog game for 2 to 6 players, made as an experiment in tabletop design.<br>
+                                    It's available for playtesting, both as a physical prototype and on Tabletop Simulator.<br>
+                                    Available both in english and in brazilian portuguese, and feedback is very much welcomed.<br>
+                                    This is a solo project with commissioned art.<br><br>
+                                    Find it on:
+                                    <a href="https://github.com/friikjones/Knights-Duty">Github</a>
+                                </modal-description>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 7-->
+    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" aria-labelledby="portfolioModal7" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content modal-colors">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <modal-title>Tabletop RPGs, <br>a journey into Fantasy</modal-title>
+                                <!-- Icon Divider-->
+                                <modal-divider />
+                                <!-- Portfolio Modal - Image-->
+                                <div>
+                                    <img class="img-fit rounded mb-5" src="assets/img/portfolio/RPG Collage 900x650.png" style="width: 70%;" alt="..." />
+                                </div>
+                                <!-- Portfolio Modal - Text-->
+                                <modal-description>
+                                    One of my passions is creating, playing and specially DMing tabletop RPGs.<br>
+                                    From Call of Cthulhu to Paranoia, and of course, D&D, I've been telling stories with dice since before I understood systems and rulesets. <br>
+                                    This passion only got stronger with time. I have DM'ed dozens of campaign in over a decade of gaming. <br>
+                                    You can find some of it at: <a href="https://github.com/friikjones/RPGs"> Github</a> <br>
+                                    Feel free to invite me to play!<br>
+                                    If you are my player already, no peeking behind the curtain, ok?
+                                </modal-description>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 8-->
+    <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" aria-labelledby="portfolioModal8" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content modal-colors">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <modal-title>Homebrews and Handouts</modal-title>
+                                <!-- Icon Divider-->
+                                <modal-divider />
+                                <!-- Portfolio Modal - Image-->
+                                <div>
+                                    <img class="img-fit rounded mb-5" src="assets/img/portfolio/modals/Homebrew 1.png" alt="..." style="width:35%" />
+                                    <img class="img-fit rounded mb-5" src="assets/img/portfolio/modals/Homebrew 2.png" alt="..." style="width:35%" />
+                                    <img class="img-fit rounded mb-5" src="assets/img/portfolio/modals/Homebrew 3.png" alt="..." style="width:35%" />
+                                    <img class="img-fit rounded mb-5" src="assets/img/portfolio/modals/Homebrew 4.png" alt="..." style="width:35%" />
+                                </div>
+                                <!-- Portfolio Modal - Text-->
+                                <modal-description>
+                                    Of course, no good RPG session is complete without good props and handouts.<br>
+                                    Using Homebrewery, I've been creating custom made handouts, location descriptions, quests and dungeons, so people that like them can just use them in their game.<br>
+                                    I've been focusing in D&D 5e, because that's the majority of campaigns I have currently.<br>
+                                    It was about time I gave back to the lovely D&D community. =) <br>
+                                    They were made using Markdown and Gimp, with art from the internet.<br>
+                                    Find the published stuff at: <a href="https://homebrewery.naturalcrit.com/user/d.mullerjones@gmail.com">Homebrewery</a><br>
+                                    <br> Oh, and I have a 3D printer now, so stay tuned for more cool stuff coming in!
+                                </modal-description>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 9-->
+    <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" aria-labelledby="portfolioModal9" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content modal-colors">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <modal-title>GGJ entries</modal-title>
+                                <!-- Icon Divider-->
+                                <modal-divider />
+                                <!-- Portfolio Modal - Image-->
+                                <div>
+                                    <img class="img-fit rounded mb-5" src="assets/img/portfolio/modals/GGJ games.png" alt="..." />
+                                </div>
+                                <!-- Portfolio Modal - Text-->
+                                <modal-description>
+                                    Global Game Jam has a very dear place in my heart, as it were where the dream of working in games became an objective.<br>
+                                    I have participated in several editions, working in multiple teams, engines and even countries.<br>
+                                    I'll continue to join every edition that I can, for as long as possible, it is always great fun.<br>
+                                    Find the submitted stuff at: <a href="https://v3.globalgamejam.org/users/daniel-jones1">GGJ</a><br>
+                                    The projects exist in several different repositories in <a href="https://github.com/friikjones">Github</a>
+                                </modal-description>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 10-->
+    <div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" aria-labelledby="portfolioModal10" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content modal-colors">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <modal-title>#Jamtastic</modal-title>
+                                <!-- Icon Divider-->
+                                <modal-divider />
+                                <!-- Portfolio Modal - Image-->
+                                <div>
+                                    <img class="img-fit rounded mb-5" src="assets/img/portfolio/modals/Jam games.png" alt="..." style="width:75%" />
+                                </div>
+                                <!-- Portfolio Modal - Text-->
+                                <modal-description>
+                                    I really like gamejams, been trying to be a part of as many as I can.<br>
+                                    One of the most awesome communities that I can think of is <a href="https://t.me/jamtasticgd">#jamtastic</a>, a brazilian game development community on Telegram. <br>
+                                    It's very hard to find good gamedev communities in portuguese, so if that's something you are looking for, feel free to join! <br>
+                                    They host monthly gamejams, with very interesting themes, showcases of games, and just all around support for hobbyists and new comers. <br>
+                                    Here is some of the stuff that I did for #Jamtastic: <a href="https://friikjones.itch.io/">itch.io</a><br>
+                                </modal-description>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
+    <div class="scroll-to-top d-lg-none position-fixed">
+        <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a>
+    </div>
     <!-- Bootstrap core JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-    <!-- Third party plugin JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
 </body>

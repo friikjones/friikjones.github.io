@@ -1,10 +1,8 @@
 /* --------- Contact --------- */
 contact {
 display: grid;
-grid-column-gap: 4rem;
+grid-column-gap: .5rem;
 background-color: #1d3650;
-padding-left: 5rem;
-padding-right: 5rem;
 padding-top: 2rem;
 padding-bottom: 2rem;
 justify-items: center;
@@ -15,12 +13,14 @@ grid-template-areas:
 
 contact-title {
     /*text-decoration: underline;*/
-    font-size: 1.2rem;
+    font-size: 2rem;
+    margin-bottom: .5rem;
     color: whitesmoke;
     text-align: center;
     line-height: 30px;
     margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
 }
 contact-icon {
-
+   font-size: 2rem;
 }
