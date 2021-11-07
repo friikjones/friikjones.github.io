@@ -4,7 +4,7 @@
   <img src="assets/img/FriikStudios Name Logo.png" alt="Friikstudios" width="600px" />
   <br>
 </h2>
-This is the repo for **[friikstudios.com](https://friikstudios.com/)**, hosted as git page.
+This is the repo for [friikstudios.com](https://friikstudios.com/), hosted as git page.
 
 Created by Daniel Jones, using [Start Bootstrap - Creative v7.0.4](https://startbootstrap.com/theme/creative)
 
