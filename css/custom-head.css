@@ -1,21 +1,106 @@
 /* --------- Head --------- */
-heading {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    font-size: 5.75rem;
-    line-height: 2.75rem;
-    text-transform: uppercase !important;
+.hero {
+    display: grid;
+    grid-template-columns: 1.1fr 1.3fr;
+    align-items: center;
+    gap: 2.5rem;
+    width: min(1200px, 90%);
+    margin: 0 auto;
+    padding: 0;
 }
 
-subheading {
-    margin-top: 1rem;
-    font-size: 4.75rem;
+.hero-column {
+    min-width: 0;
 }
 
-whoami {
-    color: white;
-    text-align: center;
-    padding-top: 10rem;
-    padding-bottom: 2rem;
+heading,
+subheading,
+.hero-column personal-title,
+.hero-column personal-p {
     font-family: 'Roboto', sans-serif;
+}
+
+.hero-heading {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.35rem;
+    color: white;
+}
+
+.hero-heading h1 {
+    margin: 0;
+    font-size: clamp(3.2rem, 5vw, 6.3rem);
+    line-height: 0.88;
+    letter-spacing: -0.06em;
+    font-weight: 700;
+    text-transform: none;
+    color: white;
+}
+
+.hero-subheading {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    margin-top: 0.4rem;
+    font-size: clamp(1.15rem, 1.8vw, 1.9rem);
+    line-height: 1.45;
+    text-transform: none;
+    color: rgba(255, 255, 255, 0.95);
+    font-weight: 500;
+}
+
+.hero-subheading span {
+    display: block;
+}
+
+.hero-column--intro {
+    color: white;
+}
+
+.hero-column--intro personal {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+
+.hero-column--intro personal-title,
+.hero-column--intro personal-p {
+    text-align: left;
+    color: white;
+}
+
+.hero-column--intro personal-title {
+    margin-bottom: 0.7rem;
+    font-size: clamp(1.7rem, 2vw, 2.45rem);
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+.hero-column--intro personal-p {
+    margin: 0;
+    font-size: clamp(1rem, 1.2vw, 1.4rem);
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.94);
+    font-weight: 400;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 2rem 0 3rem;
+    }
+
+    .hero-heading {
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-column--intro personal-title,
+    .hero-column--intro personal-p {
+        text-align: center;
+    }
 }

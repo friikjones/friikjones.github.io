@@ -22,7 +22,6 @@
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/custom-common.css" rel="stylesheet" />
     <link href="css/custom-head.css" rel="stylesheet" />
-    <link href="css/custom-resume.css" rel="stylesheet" />
     <link href="css/custom-portfolio.css" rel="stylesheet" />
     <link href="css/custom-personal.css" rel="stylesheet" />
     <link href="css/custom-contact.css" rel="stylesheet" />
@@ -43,7 +42,6 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#top">Back to Top</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#personal">Who am I</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#resume">Resume</a></li>
                     <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li> -->
                 </ul>
             </div>
@@ -51,43 +49,43 @@
     </nav>
     <!-- Masthead-->
     <header class="masthead" id="top">
-        <whoami>
-            <heading>
-                <p style="font-size:50%;margin-bottom:0rem;text-transform: none;"> Hi! I'm </p>
-                <h1 style="font-size:80%">Daniel Jones</h1>
-            </heading>
-            <subheading>
-                <p style="font-size:70%"><br>
-                    Economy Designer<br>
-                    Progression and RPG Designer <br>
-                </p>
-            </subheading>
-        </whoami>
+        <section class="hero" aria-label="Hero section">
+            <div class="hero-column hero-column--identity">
+                <heading class="hero-heading">
+                    <h1>Daniel Jones</h1>
+                    <subheading class="hero-subheading">
+                        <span>Economy Designer</span>
+                        <span>Progression and RPG Designer</span>
+                        <span>Test Engineer</span>
+                    </subheading>
+                </heading>
+            </div>
+
+            <div class="hero-column hero-column--intro" id="personal">
+                <personal>
+                    <personal-title>
+                        Hi, I'm DJ!<br>
+                    </personal-title>
+                    <personal-p>
+                        Engineer by background, mind of a Designer and a soul of a Storyteller,
+                        I have been working to combine those skills into something great!<br>
+                        Here in Canada, I've had the opportunity to work in Game Design and QA in some
+                        awesome projects, rich with learning experiences.<br>
+                        Excited to see what comes next on this wild ride!
+                    </personal-p>
+                </personal>
+            </div>
+        </section>
     </header>
-    <!-- Personal-->
-    <!-- TODO rewrite this bit -->
-    <section class=" page-section bg-primary" id="personal">
-        <personal>
-            <personal-title>
-                Hello! I'm a Brazilian game designer!
-            </personal-title>
-            <personal-p>
-                Engineer by background, mind of a Designer and a soul of a Storyteller, working to combine those skills
-                into something great!<br>
-                Here in Canada I've had the opportunity to do some amazing Game Design work and QA in some awesome
-                companies, rich with learning experiences. <br>
-                Excited to see what comes next on this wild ride!
-            </personal-p>
-        </personal>
-    </section>
     <!-- Portfolio-->
     <!-- TODO center hover responsive -->
     <!-- TODO Center items -->
     <section class="page-section portfolio-colors" id="portfolio">
         <portfolio>
             <port-title>What I've been up to:</port-title>
+
             <portfolio-items>
-                <port-subtitle> As Game Designer </port-subtitle>
+                <port-subtitle> as Game Designer </port-subtitle>
                 <port-box1>
                     <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal12">
                         <div class="portfolio-hover">
@@ -112,28 +110,20 @@
                         <img class="img-fit" src="assets/img/portfolio/MouseHaunt 1920x1138.png">
                     </div>
                 </port-box3>
-            </portfolio-items>
-            <portfolio-items>
-                <port-subtitle> </port-subtitle>
-                <port-box1>
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal13">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-plus-sign"><i class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fit" src="assets/img/portfolio/Galena 1080x645.png">
+                <port-box4>
+                    <div class="portfolio-item portfolio-item--placeholder mx-auto">
+                        <div class="portfolio-item-placeholder"></div>
                     </div>
-                </port-box1>
-                <port-box2>
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal14">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-plus-sign"><i class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fit" src="assets/img/portfolio/BrainZDefender 460x215.jpg">
+                </port-box4>
+                <port-box5>
+                    <div class="portfolio-item portfolio-item--placeholder mx-auto">
+                        <div class="portfolio-item-placeholder"></div>
                     </div>
-                </port-box2>
+                </port-box5>
             </portfolio-items>
+
             <portfolio-items>
-                <port-subtitle> As QA </port-subtitle>
+                <port-subtitle> as QA </port-subtitle>
                 <port-box1>
                     <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
                         <div class="portfolio-hover">
@@ -158,9 +148,15 @@
                         <img class="img-fit" src="assets/img/portfolio/forza 4k.png" alt="..." />
                     </div>
                 </port-box3>
+                <port-box4>
+                    <div class="portfolio-item portfolio-item--placeholder mx-auto">
+                        <div class="portfolio-item-placeholder"></div>
+                    </div>
+                </port-box4>
             </portfolio-items>
+
             <portfolio-items>
-                <port-subtitle> As Independent Creator </port-subtitle>
+                <port-subtitle> as Independent Creator </port-subtitle>
                 <port-box1>
                     <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal7">
                         <div class="portfolio-hover">
@@ -192,55 +188,10 @@
                         </div>
                         <img class="img-fit" src="assets/img/portfolio/Photonic 1920x1080.png">
                     </div>
-            </portfolio-items>
-            <portfolio-items>
-                <port-subtitle> Other Projects </port-subtitle>
-                <port-box1>
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal9">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-plus-sign"><i class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fit" src="assets/img/portfolio/GGJ 1000x900.png" style="width: 80%;">
-                    </div>
-                </port-box1>
-                <port-box2>
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal10">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-plus-sign"><i class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fit" src="assets/img/portfolio/1Jam 640x640.png" style="width: 70%;">
-                    </div>
-                </port-box2>
-                <port-box3>
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal11">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-plus-sign"><i class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fit" src="assets/img/portfolio/coding.png" style="width: 70%;">
-                    </div>
-                </port-box3>
+                </port-box4>
             </portfolio-items>
         </portfolio>
     </section>
-    <!-- Resume-->
-    <resume>
-        <resume-title>
-            <resume-h1> Resume </resume-h1>
-        </resume-title>
-        <resume-down>
-            <resume-down-link>
-                <a href="assets/CV_Daniel_Jones.pdf" download style="color:whitesmoke;">
-                    PDF download
-                </a>
-            </resume-down-link>
-        </resume-down>
-        <div style="text-align: center;">
-            <object width="100%" height="1000" type="application/pdf" style="margin:auto"
-                data="assets\CV_Daniel_Jones.pdf?#zoom=85&scrollbar=0&toolbar=0&navpanes=0">
-                <p>Insert your error message here, if the PDF cannot be displayed.</p>
-            </object>
-        </div>
-    </resume>
     <!-- Contact-->
     <contact>
         <contact-title>Find me at</contact-title>

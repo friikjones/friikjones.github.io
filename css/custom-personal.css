@@ -4,18 +4,20 @@ personal {
     grid-column-gap: 4rem;
 }
 
-personal-title {
-    /*text-decoration: underline;*/
-    font-size: 2rem;
-    text-align: center;
+personal-title,
+personal-p {
     font-family: 'Roboto', sans-serif;
 }
 
-personal-p {
-    /*text-decoration: underline;*/
-    font-size: 1.2rem;
+personal-title {
+    font-size: clamp(1.5rem, 2vw, 2.5rem);
     text-align: center;
-    line-height: 30px;
-    margin-top: 10px;
-    font-family: 'Roboto', sans-serif;
+    margin-bottom: 1.25rem;
+}
+
+personal-p {
+    font-size: clamp(1rem, 1.2vw, 1.5rem);
+    text-align: center;
+    line-height: 1.7;
+    margin-top: 0;
 }
