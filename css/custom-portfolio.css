@@ -189,6 +189,22 @@ modal-divider {
     border-radius: 0.9rem;
 }
 
+.portfolio-modal#portfolioModal-evermerge .modal-hero-image,
+.portfolio-modal#portfolioModal-mousehaunt .modal-hero-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 60vh;
+    object-fit: contain;
+    object-position: center;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    display: block;
+    margin: 0 auto 1.5rem;
+}
+
 model-description {
     display: block;
     margin: 0;
@@ -223,6 +239,32 @@ model-description {
     border-radius: 15px;
 }
 
+.portfolio-modal .modal-media-grid {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    width: 100%;
+    margin: 0 auto 1.5rem;
+}
+
+.portfolio-modal .modal-media-grid img {
+    width: 48%;
+    height: auto;
+    max-height: 60vh;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    margin: 0;
+    border-radius: 0.9rem;
+    border: none;
+    box-shadow: none;
+}
+
+.portfolio-modal .modal-media-grid.single img {
+    width: min(100%, 720px);
+}
+
 .portfolio-hover {
     opacity: 0;
     z-index: 1;
@@ -231,7 +273,7 @@ model-description {
     height: 100%;
     transition: all 0.2s ease-in-out;
     align-items: center;
-    background-color: #1d3650bb;
+    background-color: rgba(29, 54, 80, 0.55);
 }
 
 .portfolio-hover:hover {
@@ -241,6 +283,12 @@ model-description {
 .portfolio-plus-sign {
     text-align: center;
     height: 100%;
+    opacity: 1;
+}
+
+.portfolio-plus-sign i {
+    opacity: 1;
+    color: rgba(255, 255, 255, 1);
 }
 
 .portfolio-item {
