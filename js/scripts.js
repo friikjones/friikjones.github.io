@@ -51,4 +51,40 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+    const bindModalBackdropClose = () => {
+        const portfolioModals = document.querySelectorAll('.portfolio-modal');
+        portfolioModals.forEach((modalEl) => {
+            modalEl.addEventListener('click', (event) => {
+                if (event.target === modalEl) {
+                    const modalInstance = bootstrap.Modal.getInstance(modalEl);
+                    if (modalInstance) {
+                        modalInstance.hide();
+                    }
+                }
+            });
+        });
+    };
+
+    const loadPortfolioModals = async () => {
+        const modalContainer = document.getElementById('portfolio-modals-container');
+        if (!modalContainer) {
+            return;
+        }
+
+        try {
+            const response = await fetch('modals.html');
+            if (!response.ok) {
+                throw new Error(`Failed to load modal content: ${response.status}`);
+            }
+
+            const html = await response.text();
+            modalContainer.innerHTML = html;
+            bindModalBackdropClose();
+        } catch (error) {
+            console.error('Unable to load portfolio modals:', error);
+        }
+    };
+
+    loadPortfolioModals();
+
 });
